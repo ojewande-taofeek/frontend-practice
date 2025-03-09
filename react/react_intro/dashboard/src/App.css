@@ -1,0 +1,85 @@
+* {
+    scroll-behavior: smooth;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+}
+
+.App-header {
+    height: 10rem;
+    width: 100%;
+    border-bottom: 0.3rem solid rgba(241, 34, 110, 0.95);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.App-header img {
+    height: 9rem;
+    aspect-ratio: 1;
+}
+
+.App-header h1 {
+    display: inline;
+    color: rgba(241, 34, 110, 0.95);
+    position: absolute;
+    top: 3rem;
+    left: 12rem;
+    font-weight: bolder;
+    font-size: 2.5rem;
+}
+
+.App-body {
+    position: absolute;
+    top: 10rem;
+    left: 2rem;
+    font-size: 1.5rem;
+    width: 100%;
+}
+
+.App-footer {
+    position: absolute;
+    bottom: 0.5rem;
+    width: 100%;
+    border-top: 0.3rem solid rgba(241, 34, 110, 0.95);
+    font-size: 1.5rem;
+    font-style: italic;
+    text-align: center;
+}
+
+.Input {
+    position: relative;
+    top: -0.5rem;
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    height: 2rem;
+    justify-content: flex-start;
+    align-items: center;
+    
+}
+
+label {
+    padding-right: 0.5rem;
+    padding-left: 0;
+}
+
+.Email input {
+    flex-grow: 2;
+}
+
+.Password label {
+    padding-left: 0.4rem;
+}
+
+button {
+    margin-left: 0.5rem;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+

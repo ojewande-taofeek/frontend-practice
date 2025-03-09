@@ -1,0 +1,22 @@
+.Notifications {
+    border: 0.1rem dotted rgb(244, 19, 124);
+    position: absolute;
+    top: 0.5rem;
+    right: 2rem;
+    color: black;
+    height: 19vh;
+    width: 40%;
+    padding: 0.1rem;
+}
+
+p {
+    font-weight: bold;
+}
+
+li[data-priority="default"] {
+    color: blue;
+}
+
+li[data-priority="urgent"], li {
+    color: red;
+}
