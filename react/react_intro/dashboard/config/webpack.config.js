@@ -9,7 +9,7 @@ module.exports = {
         index: "./src/index.js",
     },
     output: {
-        path: path.resolve(__dirname, "public"),
+        path: path.resolve(__dirname, "../dist"),
         filename: "bundle.js",
         assetModuleFilename: "images/[hash][ext][query]",
     },
@@ -17,7 +17,7 @@ module.exports = {
     devtool: "inline-source-map",
     devServer: {
         static: {
-          directory: path.join(__dirname, './public'),
+          directory: path.join(__dirname, '../dist'),
         },
         compress: true,
         port: 3000,
@@ -46,10 +46,10 @@ module.exports = {
     plugins: [
         new HTMLWebpackPlugin({
             title: "React-Tutorial",
-            template: "./public/index.html",
+            template: "./dist/index.html",
         }),
         new CleanWebpackPlugin({
-            cleanOnceBeforeBuildPatterns: ['!./public/index.html'],
+            cleanOnceBeforeBuildPatterns: ['!./dist/index.html', '!./dist/favicon.ico'],
         }), 
         new WebpackDashboard(),
     ],

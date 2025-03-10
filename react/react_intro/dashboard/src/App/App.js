@@ -1,7 +1,7 @@
-import React, { Component, StrictMode } from 'react';
-import logo from './alxLogo.jpg';
+import React, { Component } from 'react';
+import logo from '../assets/alxLogo.jpg';
 import './App.css';
-import { getFullYear, getFooterCopy } from './utils';
+import { getFullYear, getFooterCopy } from '../utils/utils';
 
 export default class App extends Component {
     render() {

@@ -1,7 +1,6 @@
 import React from "react";
 import { render, screen } from "@testing-library/react";
 import Notifications from "./Notifications";
-import '@testing-library/jest-dom';
 
 describe("Tests for the Notifications.js", () => {
     test("that Notifications renders without crashing", () => {
