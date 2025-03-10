@@ -15,11 +15,19 @@
     position: absolute;
     top: 0;
     left: 0;
+    @media only screen and (max-width: 800px) {
+        top: 8rem;
+        height: 7rem;
+        border-bottom: 0.2rem solid rgba(241, 34, 110, 0.95);
+    }
 }
 
 .App-header img {
     height: 9rem;
     aspect-ratio: 1;
+    @media only screen and (max-width: 800px) {
+        height: 7rem;
+    }
 }
 
 .App-header h1 {
@@ -30,6 +38,10 @@
     left: 12rem;
     font-weight: bolder;
     font-size: 2.5rem;
+    @media only screen and (max-width: 800px) {
+        font-size: 1.5rem;
+        left: 8rem;
+    }
 }
 
 .App-body {
@@ -38,6 +50,11 @@
     left: 2rem;
     font-size: 1.5rem;
     width: 100%;
+    @media only screen and (max-width: 800px) {
+        top: 15rem;
+        font-size: 1rem;
+        left: 1rem;
+    }
 }
 
 .App-footer {
@@ -48,6 +65,11 @@
     font-size: 1.5rem;
     font-style: italic;
     text-align: center;
+    @media only screen and (max-width: 800px) {
+        bottom: 0.2rem;
+        font-size: 1rem;
+        border-top: 0.2rem solid rgba(241, 34, 110, 0.95);
+    }
 }
 
 .Input {
@@ -59,12 +81,17 @@
     height: 2rem;
     justify-content: flex-start;
     align-items: center;
+    @media only screen and (max-width: 800px) {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-around;
+    }
     
 }
 
 label {
     padding-right: 0.5rem;
-    padding-left: 0;
+    padding-left: 0;  
 }
 
 .Email input {
@@ -73,6 +100,9 @@ label {
 
 .Password label {
     padding-left: 0.4rem;
+    @media only screen and (max-width: 800px) {
+       padding-left: 0.1rem;
+    }
 }
 
 button {
@@ -80,6 +110,25 @@ button {
     font-weight: bold;
     font-size: 1rem;
     cursor: pointer;
+    @media only screen and (max-width: 800px) {
+       margin-left: 0;
+       margin-top: 0.5rem;
+       font-size: 0.5rem;
+    }
+}
+
+.Email {
+    @media only screen and (max-width: 800px) {
+       margin-top: 0.5rem;
+    }
+
+}
+
+.Password {
+    @media only screen and (max-width: 800px) {
+       margin-top: 0.5rem;
+    }
+
 }
 
 
