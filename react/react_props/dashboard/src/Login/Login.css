@@ -1,0 +1,73 @@
+.App-body {
+    position: absolute;
+    top: 10rem;
+    left: 2rem;
+    font-size: 1.5rem;
+    width: 100%;
+    @media only screen and (max-width: 800px) {
+        top: 15rem;
+        font-size: 1rem;
+        left: 1rem;
+    }
+}
+
+
+
+.Input {
+    position: relative;
+    top: -0.5rem;
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    height: 2rem;
+    justify-content: flex-start;
+    align-items: center;
+    @media only screen and (max-width: 800px) {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-around;
+    }
+    
+}
+
+label {
+    padding-right: 0.5rem;
+    padding-left: 0;  
+}
+
+.Email input {
+    flex-grow: 2;
+}
+
+.Password label {
+    padding-left: 0.4rem;
+    @media only screen and (max-width: 800px) {
+       padding-left: 0.1rem;
+    }
+}
+
+button {
+    margin-left: 0.5rem;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    @media only screen and (max-width: 800px) {
+       margin-left: 0;
+       margin-top: 0.5rem;
+       font-size: 0.5rem;
+    }
+}
+
+.Email {
+    @media only screen and (max-width: 800px) {
+       margin-top: 0.5rem;
+    }
+
+}
+
+.Password {
+    @media only screen and (max-width: 800px) {
+       margin-top: 0.5rem;
+    }
+
+}
