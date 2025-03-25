@@ -1,8 +1,9 @@
-import React, { Component } from 'react';
+import React, { Component, lazy, Suspense } from 'react';
 import logo from '../assets/alxLogo.jpg';
 import './App.css';
 import { getFullYear, getFooterCopy } from '../utils/utils';
 
+const Notifications = lazy(() => (import('../Notifications/Notifications')));
 export default class App extends Component {
     render() {
         return (
@@ -32,6 +33,9 @@ export default class App extends Component {
                         <p>Copyright {getFullYear()} - {getFooterCopy(true)}</p>
                     </footer>
                 </div>
+                <Suspense fallback={<h1>Loading...</h1>}>
+                    <Notifications />
+                </Suspense>
             </div>
         );
     }

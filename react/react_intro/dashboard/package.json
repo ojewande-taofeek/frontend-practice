@@ -6,7 +6,7 @@
   "homepage": "https://ojewande-taofeek.github.io/frontend-practice/",
   "scripts": {
     "test": "jest --watchAll --config config/jest.config.js",
-    "build": "webpack-dashboard -- webpack --mode production --config config/webpack.config.js",
+    "build": " webpack --mode production --config config/webpack.config.js",
     "dev": "webpack-dashboard -- webpack --mode development --config config/webpack.config.js",
     "start": "webpack-dashboard -- webpack serve --open --hot --config config/webpack.config.js",
     "predeploy": "npm run build",
@@ -48,6 +48,7 @@
     "react-dom": "^19.0.0",
     "style-loader": "^4.0.0",
     "webpack": "^5.98.0",
+    "webpack-bundle-analyzer": "^4.10.2",
     "webpack-cli": "^6.0.1",
     "webpack-dashboard": "^3.3.8",
     "webpack-dev-server": "^5.2.0"

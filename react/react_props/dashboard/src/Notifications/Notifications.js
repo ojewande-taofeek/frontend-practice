@@ -15,8 +15,23 @@ const MenuItem = () => {
 };
 
 export default class Notifications extends Component {
+    constructor(props) {
+        super(props);
+        this.markAsRead = this.markAsRead.bind(this);
+    }
+
+    markAsRead = (id) =>  {
+        if (typeof id === 'number') {
+            console.log(`Notification ${id} has been marked as read`);
+        }
+    };
+        
+
+    
     render() {
+        
         const { displayDrawer, listNotifications } = this.props;
+
     return (
         <div>
             <MenuItem />
@@ -31,7 +46,7 @@ export default class Notifications extends Component {
                        type={notifyList.type}
                        value={notifyList.value}
                        html={notifyList.html} 
-                       />)}
+                       markAsRead={() => this.markAsRead(notifyList.id)} />)}
                     </ul>
                     <button 
                         style={{ariaLabel: 'Close', position: 'absolute', top: '0.1rem', right: '0'}} 
@@ -39,16 +54,13 @@ export default class Notifications extends Component {
                             <img src={icon}  style={{width: '1rem', height: '1rem', objectFit: 'contain', backgroundColor: 'white', margin: '0.1rem'}} />
                     </button>
                 </div>
-                
             )}
-      
-            
         </div>
     )
 }}
 
 Notifications.defaultProps = {
-    displayDrawer: false,
+    displayDrawer: true,
     listNotifications: [],
 };
 

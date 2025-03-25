@@ -1,0 +1,16 @@
+.bodySectionWithMargin {
+    position: absolute;
+    top: 5rem;
+    margin-bottom: 40px;
+    width: 100%;
+}
+
+h2 {
+    color: rgb(247, 55, 71);
+}
+
+@media only screen and (max-width: 800px) {
+    .bodySectionWithMargin {
+        top: 5rem;
+    }
+}

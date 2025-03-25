@@ -1,0 +1,14 @@
+.bodySection {
+    position: relative;
+    top: 9rem;
+}
+
+@media only screen and (max-width: 800px) {
+    .bodySection {
+        top: 14rem;
+    }
+}
+
+.bodySection h2 {
+    margin-bottom: -1px;
+}
